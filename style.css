@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", cursive;
+}
+.todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 30px;
+    width: 200px;
+    height:450px;
+    margin-top: 50px;
+    background:rgb(196, 193, 196);
+    border-radius: 8px;
+}
+.todo-container h2{
+    color: #000000;
+    font-size: 1.5rem;
+}
+
+.todo-container input{
+    padding: 10px 5px;
+    outline: none;
+    border: 1px solid #05076d;
+    font-family: "Poppins", cursive;
+    border-radius: 5px;
+}
+.todo-container input::placeholder{
+    color: #000000;
+    font-size: 0.8rem;
+    font-weight: 700;
+}
+
+.todo-container button{
+    padding: 10px 20px;
+    outline: none;
+    color: #f0f8ff;
+    background:#05076d;
+    font-family: "Poppins", cursive;
+    border: 1px solid #f0f8ff;
+    border-radius: 5px;
+}
+
+.todo-container ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: -40px;
+    overflow-y: scroll;
+}
+
+#kall{
+    padding: 10px;
+    display: none;
+    font-size: 10px;
+    color: #f0f8ff;
+    border-radius: 20px;
+    background: #504d4d;
+}
+.todo-container ul li{
+    padding: 7px 50px;
+    margin: 5px;
+    background: #2d2d2e;
+    border-radius: 5px;
+    color: #f0f8ff;
+    text-align: left;
+    font-size: 0.8rem;
+}
+.todo-container .contain{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 18%;
+   background: transparent;
+   height: 30px;
+   position: fixed;
+   flex-direction: row;
+   gap: 40px;
+   bottom: 40px;
+   margin-top: -180px
+}
+.todo-container .contain .one{
+    height: 25px;
+    width: 30px;
+    border-radius: 5px;
+}
+@media(max-width:500px){
+    .todo-container{
+     margin-top: 70px;
+    }
+    .todo-container input{
+        padding: 10px 10px;
+        width: 150px;
+        outline: none;
+        border: 1px solid #05076d;
+        font-family: "Poppins", cursive;
+        border-radius: 5px;
+    }
+}
+@media(max-width:400px){
+    .todo-container{
+     margin-top: 70px;
+    }
+    .todo-container input{
+        padding: 10px 10px;
+        width: 130px;
+        outline: none;
+        border: 1px solid #05076d;
+        font-family: "Poppins", cursive;
+        border-radius: 5px;
+    }
+}
