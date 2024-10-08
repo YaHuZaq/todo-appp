@@ -45,6 +45,7 @@ body{
     font-family: "Poppins", cursive;
     border: 1px solid #f0f8ff;
     border-radius: 5px;
+    margin-top:40px;
 }
 
 .todo-container ul{
